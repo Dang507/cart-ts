@@ -1,10 +1,11 @@
-export interface IProduct {
-    Sizes: string[];
+export default interface IProduct {
+    Size: string[];
     Name: string;
     Quantity: number;
     Id: number;
     Price: number;
-    tittle:string;
+    Title:string;
     Available: string;
     Description: string;
+    image?:HTMLImageElement;
 }
