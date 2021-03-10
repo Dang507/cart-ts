@@ -7,5 +7,5 @@ export default interface IProduct {
     Title:string;
     Available: string;
     Description: string;
-    image?:HTMLImageElement;
+    Image?:HTMLImageElement;
 }
