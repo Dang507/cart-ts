@@ -1,18 +1,16 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
-import {AddToCartProduct} from '../../Components/Cart/ProductContainer'
-import * as data from '../../data.json';
+import {AddCartToProduct} from './ProductContainer'
+
 interface Props {
     product:IProduct;
-    addCart: AddToCartProduct;
+    addCart: AddCartToProduct;
     
 
 }
 
 const Product: React.FC<Props>=({product,addCart}) =>{
   
-
-
             {
     return (
         <div className="cart-item"
@@ -40,7 +38,8 @@ const Product: React.FC<Props>=({product,addCart}) =>{
              
 
             </div>
-
+                   <button>+</button>  
+                   <button>-</button>   
             <button className="cart-add-btn">add cart
 
             </button>
