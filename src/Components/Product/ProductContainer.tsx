@@ -6,20 +6,21 @@ import Product from './Product';
 
 
 
- export type AddCartToProduct=(Product:IProduct, item: number ) =>void;
+ export type AddProductToCart=(Product:IProduct, item: number ) =>void;
 
   interface State {
-      product: IProduct [];
+      product: IProduct[];
 
   } 
   interface Dispatch {
-  addToCart: AddCartToProduct;
+  addToCart: AddProductToCart;
   }
 
 
 
-const mapStateToProps= (dispatch):Dispatch=>({
-  addToCart:(product:IProduct,quantity:number)=>dispatch(AddCartToProduct)
+const mapStateToProps= (state):Dispatch=>({
+
+  
     
 
 })

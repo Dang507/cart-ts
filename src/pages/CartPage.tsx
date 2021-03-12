@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FloatPages() {
+function CartPage() {
     return (
         <div>
             <p>hello FP</p>
@@ -9,4 +9,4 @@ function FloatPages() {
     )
 }
 
-export default FloatPages
+export default CartPage

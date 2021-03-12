@@ -1,14 +1,14 @@
 import React from 'react';
 
-import ProductList from './pages/ProducList'
-import FloatPage from './pages/FloatPage'
+import ProductPage from './pages/ProductPage'
+import CartPage from './pages/CartPage'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-          <ProductList/>
-          <FloatPage/>
+          <ProductPage/>
+          <CartPage/>
 
     </div>
   );

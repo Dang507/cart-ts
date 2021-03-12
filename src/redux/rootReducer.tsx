@@ -1,7 +1,7 @@
 import React from 'react'
 import { combineReducers, Reducer } from "redux";
 
-function Reducer() {
+function rootReducer() {
     return (
         <div>
             
@@ -9,4 +9,4 @@ function Reducer() {
     )
 }
 
-export default Reducer
+export default rootReducer

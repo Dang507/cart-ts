@@ -1,10 +1,10 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
-import {AddCartToProduct} from './ProductContainer'
+import {AddProductToCart} from './ProductContainer'
 
 interface Props {
     product:IProduct;
-    addCart: AddCartToProduct;
+    addCart: AddProductToCart;
     
 
 }
@@ -13,22 +13,22 @@ const Product: React.FC<Props>=({product,addCart}) =>{
   
             {
     return (
-        <div className="cart-item"
+        <div className="product-item"
              onClick={()=>addCart(product,0)}
         
 
         >
-            <div className="cart-img">
+            <div className="product-img">
                 <img src={require(`../../data.json/${product.Image}`)}
                        title={product.Title}
                 >
                 </img>
 
             </div>
-            <p className="cart-title">{product.Title}
+            <p className="product-title">{product.Title}
                     
             </p>
-            <div className="cart-price">
+            <div className="product-price">
                 <div className="val">
                     <b>
                         {product.Price}
@@ -40,9 +40,9 @@ const Product: React.FC<Props>=({product,addCart}) =>{
             </div>
                    <button>+</button>  
                    <button>-</button>   
-            <button className="cart-add-btn">add cart
+            <div className="product-add-btn">add cart
 
-            </button>
+            </div>
 
             
            
