@@ -1,14 +1,14 @@
-import React from 'react'
-interface state {
-    isOpen:false;
-}
+import React, { useState } from 'react'
+import {CartContainer} from '../Cart/CartContainer'
 
-function Cart: React.FC<state>=()=> {
-    return (
-        <div>
-            
-        </div>
-    )
+interface State{
+    isOpen:boolean;
 }
+ const Cart=({CartContainer:CartContainer})=>{
+
+    const [isOpen,setIsOpen]=useState(true);
+
+
+ }
 
 export default Cart

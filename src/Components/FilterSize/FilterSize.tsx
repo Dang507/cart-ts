@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SortSize() {
+function FilterSize() {
     return (
         <div>a
             
@@ -8,4 +8,4 @@ function SortSize() {
     )
 }
 
-export default SortSize
+export default FilterSize

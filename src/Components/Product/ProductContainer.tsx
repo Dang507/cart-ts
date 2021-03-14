@@ -8,17 +8,17 @@ import Product from './Product';
 
  export type AddProductToCart=(Product:IProduct, item: number ) =>void;
 
-  interface State {
+  interface StateToProps {
       product: IProduct[];
-
+      filteredSizes: Set<string>;
   } 
-  interface Dispatch {
+  interface DispatchToProps {
   addToCart: AddProductToCart;
   }
 
 
 
-const mapStateToProps= (state):Dispatch=>({
+const mapStateToProps= (state)=>({
 
   
     
@@ -27,5 +27,5 @@ const mapStateToProps= (state):Dispatch=>({
 const mapDispatchToProps =()=>({
 
 })
-export type ProuductContainer = State & Dispatch;
+export type ProuductContainer = StateToProps & DispatchToProps;
 export default connect (mapStateToProps,mapDispatchToProps)(Product)

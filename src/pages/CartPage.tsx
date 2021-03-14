@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CartPage() {
+const CartPage=() {
     return (
         <div>
             <p>hello FP</p>

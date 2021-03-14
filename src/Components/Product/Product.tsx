@@ -4,25 +4,24 @@ import {AddProductToCart} from './ProductContainer'
 
 interface Props {
     product:IProduct;
-    addCart: AddProductToCart;
-    
-
+    addToCart: AddProductToCart;
+    key:number; 
 }
 
-const Product: React.FC<Props>=({product,addCart}) =>{
+const Product:React.FC<Props>= ({product,addToCart})=>{
   
             {
     return (
         <div className="product-item"
-             onClick={()=>addCart(product,0)}
+             onClick={()=>addToCart(product,0)}
         
 
         >
             <div className="product-img">
-                <img src={require(`../../data.json/${product.Image}`)}
+                {/* <img src={require(`../../data.json/${product.Image}`)}
                        title={product.Title}
                 >
-                </img>
+                </img> */}
 
             </div>
             <p className="product-title">{product.Title}
