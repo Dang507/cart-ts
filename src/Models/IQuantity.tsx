@@ -6,4 +6,4 @@ export  interface IQuantity {
     
 }
 
-export interface CartProduct extends IQuantity, IProduct {}
+export default interface CartProduct extends IQuantity, IProduct {}

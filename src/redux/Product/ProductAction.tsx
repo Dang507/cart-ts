@@ -6,7 +6,9 @@ export enum ProductActionType {
 }
 export class ProductFetchedAction implements Action {
 
-    public type: ProductActionType = ProductActionType.PRODUCT_FETCHED;
+   public  type: ProductActionType = ProductActionType.PRODUCT_FETCHED;
     constructor(public products: IProduct[]) {}
 }
-export type ProductAction = ProductFetchedAction;
+export type ProductAction = ProductFetchedAction;   
+
+

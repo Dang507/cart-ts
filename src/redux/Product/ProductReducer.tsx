@@ -1,7 +1,7 @@
 import React from 'react'
-import { Dictionary } from '../../Models/dictionary';
+import  Dictionary  from '../../Models/Dictionary';
 import IProduct from '../../Models/IProduct';
-import { CartProduct } from '../../Models/IQuantity';
+import  CartProduct  from '../../Models/IQuantity';
 import { ProductAction,ProductActionType } from './ProductAction';
 
 export interface ProductState {

@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import CartGroup from '../Components/Cart/CartGroup'
+import IProduct from '../Models/IProduct'
+import CartProduct from '../Models/IQuantity'
 
-const CartPage=() {
+ const Cart=() =>{
+
+    const [isOpen,setIsOpen]=useState(true)
+    const toggle = () => {
+       setIsOpen((pre:State)=>({isOpen: !pre.isOpen}))
+      }
+      const cartproducts=[];
+
     return (
-        <div>
-            <p>hello FP</p>
-            
-        </div>
-    )
-}
+        <>
+        <div className="cart-btn" onClick={toggle}>x</div>
+            <div className="cart-content">
+            <div className="cart-group">
+                {cartproducts.map((value:IProduct,index:CartProduct)=>
+                return (
+                <CartGroup product={value}, key={index}
+                
+                )
+                )
+                      
+        
 
-export default CartPage
+       </>
+    )
+
+
+export default Cart

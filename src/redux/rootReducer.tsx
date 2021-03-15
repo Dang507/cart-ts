@@ -1,7 +1,7 @@
 import React from 'react'
 import { combineReducers, Reducer } from "redux";
-import { CartState } from './Cart/CartReducer';
-import { FilterState } from './FilterSize/FilterReducer';
+import { CartReducer, CartState } from './Cart/CartReducer';
+import { FilterState,FilterReducer } from './FilterSize/FilterReducer';
 import { productReducer, ProductState } from './Product/ProductReducer';
 
 export interface AppState{
@@ -12,6 +12,7 @@ export interface AppState{
 
 export const rootReducer : Reducer<AppState>=combineReducers<AppState>({
      productState:productReducer,
-     cartState:
+     cartState: CartReducer,
+     
   
 });
