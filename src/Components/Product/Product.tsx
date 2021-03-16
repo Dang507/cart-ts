@@ -1,6 +1,8 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
 import {AddProductToCart} from './ProductContainer'
+import data from '../../data.json'
+
 
 interface Props {
     product:IProduct;
@@ -13,15 +15,17 @@ const Product:React.FC<Props>= ({product,addToCart})=>{
             {
     return (
         <div className="product-item"
-             onClick={()=>addToCart(product,0)}
+             onClick={()=>addToCart(product,0)
+            
+            }
         
 
         >
             <div className="product-img">
-                {/* <img src={require(`../../data.json/${product.Image}`)}
+                <img src={product.Image}
                        title={product.Title}
                 >
-                </img> */}
+                </img>
 
             </div>
             <p className="product-title">{product.Title}

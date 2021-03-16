@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import IProduct from "../../Models/IProduct";
-import { CartGroupContainer} from "./CartGroupContainer";
+import { CartContainer} from "./CartGroupContainer";
 
 
-interface State {
-  product:IProduct;
-}
 
-const CartGroup:React.FC<State>=()=> {
+
+const CartGroup:React.FC<CartContainer>=()=> {
  
     return (
     <div className="cart-item">
       <div className="image">
-        <img src={require(``)} alt={product.title} title={product.title} />
+        <img src= >
+          
+        </img>
+
       </div>
       <div className="details">
         <p className="title">{product.title}</p>

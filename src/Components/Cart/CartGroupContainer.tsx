@@ -1,18 +1,25 @@
-import  Dictionary  from "../../Models/Dictionary";
-import IProduct from "../../Models/IProduct";
-import  CartProduct  from "../../Models/IQuantity";
-import { AppState } from "../../redux/rootReducer";
 
-type  addCartProductDispatchProp= (product:IProduct,quantity:number)=>void;
+import { connect } from "react-redux";
+import IProduct from "../../Models/IProduct";
+import CartProduct from "../../Models/IQuantity";
+import { RemoveProductToCart } from "../../redux/Cart/CartAction";
+import { AppState } from "../../redux/rootReducer";
+import CartGroup from "./CartGroup";
+
+type removeCartItemDispatchProp = (productcart: CartProduct, id: number) => void;
 
 interface DispatchProp {
-    addCartProduct:addCartProductDispatchProp;
+    removeCartItem: removeCartItemDispatchProp;
 }
-interface StateProp {
-    cartProducts:Dictionary<CartProduct>
+interface Prop {
+    product: CartProduct;
+    key: number;
 }
+export type CartContainer = DispatchProp & Prop;
 
-const mapStateToProps= (state:AppState):StateProp=>({
-
+const mapDispatchToProps = (dispatch:any): DispatchProp => ({
+    removeCartItem: (productcart: CartProduct, id: number) => dispatch (RemoveProductToCart(productcart,id)),
+   
 })
-export type CartContainer = StateProp & DispatchProp;
+
+export default connect(null,mapDispatchToProps)(CartGroup)
