@@ -12,9 +12,8 @@ export function CartReducer (state:CartState=intial,action:CartAction):CartState
     switch (action.type){
         case CartTypes.ADD_PRODUCT:
             const product = (action as AddProductAction).product
-            if (state.products[product.Image]){
-                product.itemIQuantity += state.products[Image].item
-            }
+            if (){
+            
         }
 
 

@@ -1,30 +1,31 @@
 import React, { Component } from "react";
 import IProduct from "../../Models/IProduct";
-import { CartContainer} from "./CartGroupContainer";
+
+import {CartGroupProp} from '../Cart/CartGroupContainer'
 
 
 
 
-const CartGroup:React.FC<CartContainer>=()=> {
- 
-    return (
+const CartGroup = (CartGroup: CartGroupProp) => {
+
+  return (
     <div className="cart-item">
       <div className="image">
-        <img src= >
-          
+        <img  >
+
         </img>
 
       </div>
       <div className="details">
-        <p className="title">{product.title}</p>
-       
+        <p className="title">{CartGroup.product.Title}</p>
+
       </div>
-     
+
     </div>
-    );
-  }
+  );
+}
 
  
-}
+
 
 export default CartGroup;

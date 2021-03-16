@@ -12,7 +12,7 @@ export interface AppState{
 
 export const rootReducer : Reducer<AppState>=combineReducers<AppState>({
      productState:productReducer,
-     cartState: CartReducer,
+     cartState: CartReducer
      
   
 });

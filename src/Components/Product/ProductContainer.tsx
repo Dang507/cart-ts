@@ -20,5 +20,5 @@ interface DispatchToProps {
 const mapDispatchToProps = (dispatch:any): DispatchToProps => ({
   addToCart: (product: IProduct, quantity: number) => dispatch(AddProductToCart(product, quantity)),
 });
-export type ProuductContainer =  StateToProps & DispatchToProps;
-export default connect(mapDispatchToProps)(ProductPage);
+export type ProuductProp =  StateToProps & DispatchToProps;
+export default connect(null,mapDispatchToProps)(ProductPage);

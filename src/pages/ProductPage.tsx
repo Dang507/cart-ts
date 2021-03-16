@@ -1,6 +1,6 @@
 import React from 'react'
 import Product from '../Components/Product/Product'
-import { ProuductContainer } from '../Components/Product/ProductContainer'
+import { ProuductProp } from '../Components/Product/ProductContainer'
 import IProduct from '../Models/IProduct'
 
 
@@ -8,31 +8,31 @@ import IProduct from '../Models/IProduct'
 //     selectedSizes: string[];
 
 //  }
-const ProductPage=(ProductContainer:ProuductContainer)=>{
-  
+const ProductPage = (ProductProp: ProuductProp) => {
+
     return (
         <>
             <div className="product-page">
-          
-               <div className ="container">
-                   { ProductContainer.product.map((value:IProduct,index:number)=>{
-                         return (
-                             <Product 
-                                      product={value} 
-                                      key={index}
-                                      addToCart={ProductContainer.addToCart}/>
-                         );
 
-                     })}
-            
-              
-               </div>
+                <div className="container">
+                    {ProductProp.product.map((value: IProduct, index: number) => {
+                        return (
+                            <Product
+                                product={value}
+                                key={index}
+                                addToCart={ProductProp.addToCart} />
+                        );
+
+                    })}
+
+
+                </div>
 
             </div>
         </>
     )
-    
-    
+
+
 }
 
 export default ProductPage
