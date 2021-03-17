@@ -3,21 +3,18 @@ import Product from '../Components/Product/Product'
 import { ProuductProp } from '../Components/Product/ProductContainer'
 import IProduct from '../Models/IProduct'
 
-
-//  interface State {
-//     selectedSizes: string[];
-
-//  }
 const ProductPage = (ProductProp: ProuductProp) => {
 
     return (
+        
         <>
             <div className="product-page">
 
                 <div className="container">
-                    {ProductProp.product.map((value: IProduct, index: number) => {
+                    { ProductProp.product.map((value: IProduct, index: number) => {
                         return (
                             <Product
+                             
                                 product={value}
                                 key={index}
                                 addToCart={ProductProp.addToCart} />

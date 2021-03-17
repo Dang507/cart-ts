@@ -7,21 +7,21 @@ import Store from './redux/Store';
 import { Provider } from 'react-redux';
 import CartProduct from './Models/IQuantity';
 import Product from './Components/Product/Product';
-
+import store from '../src/redux/Store'
 
 function App() {
-  const product1 = ProuductProp.
-  return (
   
-   
+  return (
+ 
 
-   
-    <div className="App">
-          {/* <ProductPage/>
-          <CartPage/> */}
-          <Product product ProductProp.product[0]>
+<div className="App">
+          <ProductPage/>
+          <CartPage/>
+      
 
     </div>
+    
+    
    
   );
 }

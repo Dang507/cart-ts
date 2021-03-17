@@ -18,7 +18,7 @@ interface Prop {
 export type CartGroupProp = DispatchProp & Prop;
 
 const mapDispatchToProps = (dispatch:any): DispatchProp => ({
-    removeCartItem: (productcart: CartProduct, id: number) => dispatch (RemoveProductToCart(productcart,id)),
+    removeCartItem: (cartproduct: CartProduct, id: number) => dispatch (RemoveProductToCart(cartproduct,id)),
    
 })
 

@@ -1,5 +1,6 @@
-{
-    "products": [
+import IProduct from "./Models/IProduct";
+
+ export  const products:IProduct[]= [
         {
             "Size": [
                 "X",
@@ -95,4 +96,3 @@
             "Description": "áo cho boy cute"
         }
     ]
-}

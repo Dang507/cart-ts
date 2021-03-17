@@ -7,7 +7,7 @@ import { AppState } from "../redux/rootReducer";
 import CartPage from '../pages/CartPage'
 import { getProductToCart } from "../redux/Cart/CartSelector";
 
-type addProductCartDispatchProp = (product: IProduct, quantity: number) => void;
+export type addProductCartDispatchProp = (product: IProduct, quantity: number) => void;
 
 interface DisPatchProp {
     addProductCart: addProductCartDispatchProp;

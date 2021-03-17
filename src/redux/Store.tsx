@@ -1,11 +1,7 @@
 import React from 'react'
+import {createStore} from 'redux'
+import { rootReducer } from './rootReducer'
+const store =createStore(rootReducer)
 
-function Store() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
 
-export default Store
+export default store

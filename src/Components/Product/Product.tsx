@@ -1,63 +1,62 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
-import {AddProductToCart} from './ProductContainer'
-import products from '../../data.json'
+import { AddProductToCart } from './ProductContainer'
+
 
 
 interface Props {
-    product:IProduct;
+    product: IProduct;
     addToCart: AddProductToCart;
-    key:number; 
+    key: number;
 }
 
-const Product:React.FC<Props>= ({product,addToCart})=>{
-  
-            {
-    return (
-        <div className="product-item"
-             onClick={()=>addToCart(product,0)}
-             
-             
-        >
-              <div className="product-img">
-                <img src={product.Image}
-                       title={product.Title}
-                >
-                </img>
+const Product = (prop: Props) => {
 
-            </div>
-            <p className="product-title">{product.Title}
-                    
-            </p>
-            <div className="product-price">
-                <div className="val">
-                    <b>
-                        {product.Price}
-                    </b>
+    {
+        return (
+            <div className="product-item"
+                onClick={() =>  prop.addToCart(prop.product, 0)}
+            >
+
+                <div className="product-img">
+                    <img src={prop.product.Image}
+                        title={prop.product.Title}
+                    >
+                    </img>
 
                 </div>
-             
+                <p className="product-title">{prop.product.Title}
+
+                </p>
+                <div className="product-price">
+                    <div className="val">
+                        <b>
+                            {prop.product.Price}
+                        </b>
+
+                    </div>
+
+
+                </div>
+
+                <div className="product-add-btn">add cart
 
             </div>
-                 
-            <div className="product-add-btn">add cart
 
-            </div> 
-         
 
-        
-        
 
-            
-           
-           
-        </div>
-    )
-}
+
+
+
+
+
+            </div>
+        )
+    }
 }
 
 export default Product
-    {/* <div className="product-img">
+{/* <div className="product-img">
                 <img src={product.Image}
                        title={product.Title}
                 >

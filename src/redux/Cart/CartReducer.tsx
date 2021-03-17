@@ -1,6 +1,6 @@
 import  Dictionary  from "../../Models/Dictionary";
 import  CartProduct  from "../../Models/IQuantity";
-import {CartAction,CartTypes,AddProductAction} from './CartAction'
+import {CartAction,CartTypes,AddProductAction, RemoveCartProductAction} from './CartAction'
 
 export interface CartState {
     products: Dictionary<CartProduct>
@@ -18,6 +18,7 @@ export function CartReducer (state:CartState=intial,action:CartAction):CartState
 
 
         case CartTypes.REMOVE_PRODUCT:
+            const removeproduct= (action as RemoveCartProductAction).product
           
             
         
@@ -26,3 +27,5 @@ export function CartReducer (state:CartState=intial,action:CartAction):CartState
 
 
 }
+
+
