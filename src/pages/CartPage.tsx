@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CartGroup from '../Components/Cart/CartGroup'
 import CartGroupContainer from '../Components/Cart/CartGroupContainer'
 import { ProuductProp } from '../Components/Product/ProductContainer'
+import { products } from '../data'
 import IProduct from '../Models/IProduct'
 import CartProduct from '../Models/IQuantity'
 import ProductCart,  {CartProp}  from '../pages/CartContainer'
@@ -19,10 +20,15 @@ const CartPage = (CartProp: CartProp) => {
   //      setIsOpen((pre:State)=>({isOpen: !pre.isOpen}))
   //     }
   const cartproducts: any[] = [];
-  // for (const a in ProductCart) {
+  for (const a in ProductCart) {
+      cartproducts.push(CartProp.ProductCart[a])
 
-
-  // }
+  }
+  const item= cartproducts.reduce((sum:number, prod:CartProduct)=>
+  {
+        return sum + prod.itemIQuantity },0);
+    
+  
    
   return (
     <>
