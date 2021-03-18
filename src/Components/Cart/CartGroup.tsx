@@ -17,7 +17,7 @@ const CartGroup = (CartGroups: CartGroupProp) => {
 
       </div>
       <div className="details">
-        <p className="title">{CartGroups.product.Title}</p>
+        <p className="title"></p>
 
       </div>
 

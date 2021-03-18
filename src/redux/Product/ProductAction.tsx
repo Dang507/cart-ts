@@ -11,4 +11,8 @@ export class ProductFetchedAction implements Action {
 }
 export type ProductAction = ProductFetchedAction;   
 
+export const setProducts=(product:IProduct[])=>{
+    return new ProductFetchedAction(product)
+}
+
 

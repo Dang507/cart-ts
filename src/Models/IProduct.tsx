@@ -5,7 +5,5 @@ export default interface IProduct {
     Id: number;
     Price: number;
     Title:string;
-    Available: string;
-    Description: string;
     Image: string ;
 }

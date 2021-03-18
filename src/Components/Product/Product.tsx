@@ -1,6 +1,7 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
-import { AddProductToCart } from './ProductContainer'
+import { AddProductToCart } from '../../pages/ProductContainer'
+import { productReducer } from '../../redux/Product/ProductReducer'
 import './product.css'
 
 
@@ -15,11 +16,12 @@ const Product = (prop: Props) => {
     {
         return (
             <div className="product-item"
-                onClick={() =>  prop.addToCart(prop.product, 0)}
+                onClick={() =>  prop.addToCart(prop.product, 1)}
+                
             >
 
                 <div className="product-img">
-                    <img src='./Components/Product/asset/images/10412368723880252_1.jpg' 
+                    <img src={ prop.product.Image} 
                         
                     >
                     </img>

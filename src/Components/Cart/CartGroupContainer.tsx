@@ -22,4 +22,4 @@ const mapDispatchToProps = (dispatch:any): DispatchProp => ({
    
 })
 
-export default connect(mapDispatchToProps)(CartGroup)
+export default connect(null,mapDispatchToProps)(CartGroup)
