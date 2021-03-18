@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Dictionary from "../Models/Dictionary";
+import Dictionary from "../Models/IDictionary";
 import IProduct from "../Models/IProduct";
 import CartProduct from "../Models/IQuantity";
 import { AddProductToCart } from "../redux/Cart/CartAction";

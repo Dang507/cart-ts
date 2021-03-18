@@ -31,4 +31,4 @@ export const RemoveProductToCart = (product: CartProduct, id: number) => (dispat
 
 
 }
-export type CartAction = AddProductAction & RemoveCartProductAction;
+export type CartAction = AddProductAction | RemoveCartProductAction;

@@ -6,7 +6,7 @@ import {CartGroupProp} from '../Cart/CartGroupContainer'
 
 
 
-const CartGroup = (CartGroup: CartGroupProp) => {
+const CartGroup = (CartGroups: CartGroupProp) => {
 
   return (
     <div className="cart-item">
@@ -17,7 +17,7 @@ const CartGroup = (CartGroup: CartGroupProp) => {
 
       </div>
       <div className="details">
-        <p className="title">{CartGroup.product.Title}</p>
+        <p className="title">{CartGroups.product.Title}</p>
 
       </div>
 

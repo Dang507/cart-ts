@@ -1,5 +1,5 @@
 import React from 'react'
-import  Dictionary  from '../../Models/Dictionary';
+import  Dictionary  from '../../Models/IDictionary';
 import IProduct from '../../Models/IProduct';
 import  CartProduct  from '../../Models/IQuantity';
 import { ProductAction,ProductActionType } from './ProductAction';

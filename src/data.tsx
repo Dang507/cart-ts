@@ -1,6 +1,6 @@
 import IProduct from "./Models/IProduct";
 
- export  const products:IProduct[]= [
+ const DataProduct: IProduct[]= [
         {
             "Size": [
                 "X",
@@ -15,7 +15,7 @@ import IProduct from "./Models/IProduct";
             "Title": "áo thun",
             "Available": "còn hàng",
             "Description": "áo cho boy cute",
-            "Image": "./asset/Images/10412368723880252_1.jpg"
+            "Image": "./Components/Product/asset/images/10412368723880252_1.jpg"
         },
         {
             "Size": [
@@ -30,7 +30,7 @@ import IProduct from "./Models/IProduct";
             "Title": "áo somi",
             "Available": "còn hàng",
             "Description": "áo cho boy cute",
-            "Image": "./asset/Images/5619496040738316_1.jpg"
+            "Image": './Components/Product/asset/images/876661122392077_1.jpg'
         },
         {
             "Size": [
@@ -44,7 +44,7 @@ import IProduct from "./Models/IProduct";
             "Title": "áo thun",
             "Available": "còn hàng",
             "Description": "áo cho boy cute",
-            "Image": "./asset/Images/6090484789343891_2.jpg"
+            "Image": './Components/Product/asset/images/10412368723880252_1.jpg'
         },
         {
             "Size": [
@@ -57,7 +57,7 @@ import IProduct from "./Models/IProduct";
             "Title": "áo thun",
             "Available": "còn hàng",
             "Description": "áo cho men",
-            "Image": "./asset/Images/6090484789343891_2.jpg"
+            "Image":  './Components/Product/asset/images/10412368723880252_1.jpg'
         },
         {
             "Size": [
@@ -69,7 +69,8 @@ import IProduct from "./Models/IProduct";
             "Price": 10000,
             "Title": "áo thun",
             "Available": "còn hàng",
-            "Description": "áo cho boy cute"
+            "Description": "áo cho boy cute",
+            "Image":  './Components/Product/asset/images/10412368723880252_1.jpg'
         },
         {
             "Size": [
@@ -81,7 +82,8 @@ import IProduct from "./Models/IProduct";
             "Price": 10000,
             "Title": "áo thun",
             "Available": "còn hàng",
-            "Description": "áo cho boy handsome"
+            "Description": "áo cho boy handsome",
+            "Image":  './Components/Product/asset/images/10412368723880252_1.jpg'
         },
         {
             "Size": [
@@ -93,6 +95,8 @@ import IProduct from "./Models/IProduct";
             "Price": 10000,
             "Title": "áo thun",
             "Available": "hết hàng",
-            "Description": "áo cho boy cute"
+            "Description": "áo cho boy cute",
+            "Image":  './Components/Product/asset/images/10412368723880252_1.jpg'
         }
     ]
+    export default DataProduct

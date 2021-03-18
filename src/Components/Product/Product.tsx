@@ -1,7 +1,7 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
 import { AddProductToCart } from './ProductContainer'
-
+import './product.css'
 
 
 interface Props {
@@ -19,8 +19,8 @@ const Product = (prop: Props) => {
             >
 
                 <div className="product-img">
-                    <img src={prop.product.Image}
-                        title={prop.product.Title}
+                    <img src='./Components/Product/asset/images/10412368723880252_1.jpg' 
+                        
                     >
                     </img>
 
@@ -42,41 +42,9 @@ const Product = (prop: Props) => {
                 <div className="product-add-btn">add cart
 
             </div>
-
-
-
-
-
-
-
-
             </div>
         )
     }
 }
 
 export default Product
-{/* <div className="product-img">
-                <img src={product.Image}
-                       title={product.Title}
-                >
-                </img>
-
-            </div>
-            <p className="product-title">{product.Title}
-                    
-            </p>
-            <div className="product-price">
-                <div className="val">
-                    <b>
-                        {product.Price}
-                    </b>
-
-                </div>
-             
-
-            </div>
-                 
-            <div className="product-add-btn">add cart
-
-            </div> */}

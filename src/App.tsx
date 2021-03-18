@@ -9,6 +9,8 @@ import CartProduct from './Models/IQuantity';
 import Product from './Components/Product/Product';
 import store from '../src/redux/Store'
 import {AddProductAction } from './redux/Cart/CartAction'
+import ProductContainer from './Components/Product/ProductContainer';
+import CartContainer from './pages/CartContainer';
 function App() {
   
 
@@ -17,10 +19,12 @@ function App() {
  
 
 <div className="App">
-          <ProductPage/>
-          <CartPage/>
-      
+         <ProductContainer>
 
+         </ProductContainer>
+         {/* <CartContainer></CartContainer> */}
+      
+ 
     </div>
     
     

@@ -14,12 +14,19 @@ interface StateToProps {
 }
 interface DispatchToProps {
   addToCart: AddProductToCart;
- 
+  
 }
 
+const mapStateToProps= (state:any):StateToProps =>{
 
+  
+   return {
+     ...state,
+   }
+
+}
 const mapDispatchToProps = (dispatch:any): DispatchToProps => ({
   addToCart: (product: IProduct, quantity: number) => dispatch(AddProductToCart(product, quantity)),
 });
 export type ProuductProp = StateToProps & DispatchToProps;
-export default connect(null,mapDispatchToProps)(ProductPage);
+export default connect(mapStateToProps,mapDispatchToProps)(ProductPage);
