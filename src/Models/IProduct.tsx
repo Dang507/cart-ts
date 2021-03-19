@@ -2,7 +2,7 @@ export default interface IProduct {
     Size: string[];
     Name: string;
     Quantity: number;
-    Id: number;
+    id: number;
     Price: number;
     Title:string;
     Image: string ;

@@ -10,7 +10,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 1,
             "Price": 10000,
             "Title": "áo thun",          
             "Image": "/images/h3.jpg"
@@ -24,7 +24,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 11,
             "Price": 10000,
             "Title": "áo thun",           
             "Image": "/images/h2.jpg"
@@ -38,7 +38,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 21,
             "Price": 10000,
             "Title": "áo thun",         
             "Image": "/images/h3.jpg"
@@ -52,7 +52,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 14,
             "Price": 10000,
             "Title": "áo thun",                  
             "Image": "/images/h2.jpg"
@@ -66,7 +66,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 51,
             "Price": 10000,
             "Title": "áo thun",                      
             "Image": "/images/h3.jpg"
@@ -80,7 +80,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 21,
             "Price": 10000,
             "Title": "áo thun",                
             "Image": "/images/h4.jpg"
@@ -94,7 +94,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 31,
             "Price": 10000,
             "Title": "áo thun",
            
@@ -110,7 +110,7 @@ import IProduct from "./Models/IProduct";
             ],
             "Name": "Áo 1",
             "Quantity": 10,
-            "Id": 1,
+            "id": 18,
             "Price": 10000,
             "Title": "áo thun",
             

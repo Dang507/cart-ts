@@ -6,7 +6,7 @@ import { RemoveProductToCart } from "../../redux/Cart/CartAction";
 import { AppState } from "../../redux/rootReducer";
 import CartGroup from "./CartGroup";
 
-type removeCartItemDispatchProp = (productcart: CartProduct, id: number) => void;
+type removeCartItemDispatchProp = (productcart: CartProduct, key: number) => void;
 
 interface DispatchProp {
     removeCartItem: removeCartItemDispatchProp;
@@ -18,7 +18,7 @@ interface Prop {
 export type CartGroupProp = DispatchProp & Prop;
 
 const mapDispatchToProps = (dispatch:any): DispatchProp => ({
-    removeCartItem: (cartproduct: CartProduct, id: number) => dispatch (RemoveProductToCart(cartproduct,id)),
+    removeCartItem: (cartproduct: CartProduct, key: number) => dispatch (RemoveProductToCart(cartproduct,key)),
    
 })
 

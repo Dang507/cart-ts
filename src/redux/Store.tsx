@@ -2,6 +2,7 @@ import React from 'react'
 import {createStore,AnyAction,Dispatch,Middleware,compose,applyMiddleware} from 'redux'
 import { rootReducer } from './rootReducer'
 import thunk from "redux-thunk"
+
 const simple=()=>(next:Dispatch<AnyAction>)=>(action:AnyAction)=>{
     next({...action});
 }

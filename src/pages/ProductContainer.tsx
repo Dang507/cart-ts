@@ -18,14 +18,13 @@ interface DispatchToProps {
   
 }
 
-const mapStateToProps= (state:any):StateToProps =>{
-
-  
-   return {
-     ...state,
-   }
-
+const mapStateToProps= (state:StateToProps)=>{
+  return {
+    ...state,
+  }
 }
+
+
 const mapDispatchToProps = (dispatch:any): DispatchToProps => ({
   addToCart: (product: IProduct, quantity: number) => dispatch(AddProductToCart(product, quantity)),
 });

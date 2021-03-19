@@ -1,0 +1,29 @@
+.cart-btn {
+  width: 40px;
+  height: 50px;
+  color: #ececec;
+  background-color: #1b1a20;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 0;
+}
+
+.cart-content {
+  width: 40px;
+  height: 50px;
+  color: #ececec;
+  text-align: center;
+  line-height: 50px;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.cart-group {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  padding-bottom: 200px;
+  display: inline-block;
+}

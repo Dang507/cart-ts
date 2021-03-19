@@ -1,7 +1,7 @@
 import IProduct from "./IProduct";
 
 
-export  interface IQuantity {
+export interface IQuantity {
     itemIQuantity: number;
     
 }

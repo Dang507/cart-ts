@@ -22,9 +22,7 @@ function App() {
          <ProductContainer>
 
          </ProductContainer>
-         <CartContainer>
-           
-         </CartContainer>
+        <CartContainer/>
       
  
     </div>

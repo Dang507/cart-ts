@@ -1,7 +1,7 @@
 import React from 'react'
 import IProduct from '../../Models/IProduct'
 import { AddProductToCart } from '../../pages/ProductContainer'
-import { productReducer } from '../../redux/Product/ProductReducer'
+
 import './product.css'
 
 
@@ -41,7 +41,8 @@ const Product = (prop: Props) => {
 
                 </div>
 
-                <div className="product-add-btn">add cart
+                <div className="product-add-btn"
+                      >add cart
 
             </div>
             </div>
