@@ -10,6 +10,9 @@ import { AppState } from "../redux/rootReducer";
 
 export type AddProductToCart = (Product: IProduct, quantity: number) => void;
 
+
+
+
 interface StateToProps {
   product: IProduct[];
 }
@@ -20,7 +23,8 @@ interface DispatchToProps {
 
 const mapStateToProps= (state:StateToProps)=>{
   return {
-    ...state,
+  ...state,
+    
   }
 }
 

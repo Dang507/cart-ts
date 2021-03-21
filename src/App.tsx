@@ -19,10 +19,11 @@ function App() {
  
 
 <div className="App">
-         <ProductContainer>
-
-         </ProductContainer>
         <CartContainer/>
+         <ProductContainer/>
+
+       
+       
       
  
     </div>

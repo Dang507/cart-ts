@@ -1,25 +1,103 @@
-.cart-btn {
+.cart-page {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 450px;
+  height: 100%;
+  background-color: #1b1a20;
+  box-sizing: border-box;
+  transition: right 0.2s;
+  -moz-transition: right 0.2s;
+  -webkit-transition: right 0.22s;
+ 
+  -o-transition: right 0.2s;
+ 
+}
+.cart-page--cart-close {
+  right: -450px;
+}
+.cart-header {
+ 
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 45px 0;
   width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+ 
+}
+.cart-header .cart-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.cart-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+.cart-close-btn {
+  width: 50px;
   height: 50px;
   color: #ececec;
   background-color: #1b1a20;
   text-align: center;
   line-height: 50px;
   position: absolute;
+  top: 0;
   left: 0;
+  cursor: pointer;
+  
 }
 
-.cart-content {
+.cart-close-btn:hover {
+  background-color: #3e25cf;
+}
+.bags {
   width: 40px;
-  height: 50px;
-  color: #ececec;
-  text-align: center;
-  line-height: 50px;
-  left: 0;
-  height: 100%;
-  overflow-y: scroll;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  background-image:url('../bag-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.bags--cart-close {
+  position: absolute;
+  background-color: #000;
+  background-size: 50%;
+  top: 0;
+  left: -60px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
 
+.item-quantity-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: #0c0b10;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  background-color: #eabf00;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+}
+.item-quantity-icon--cart-close {
+  bottom: 5px;
+  right: 10px;
+}
 .cart-group {
   position: relative;
   width: 100%;

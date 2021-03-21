@@ -16,10 +16,10 @@ const Product = (prop: Props) => {
     {
         return (
             <div className="product-item"
-                onClick={() =>  prop.addToCart(prop.product, 1)}
+                onClick={() =>  prop.addToCart(prop.product, 0)}
                 
-            >
-
+            > 
+        
                 <div className="product-img">
                     <img src={ prop.product.Image} 
                         

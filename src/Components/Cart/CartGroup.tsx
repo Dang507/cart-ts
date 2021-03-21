@@ -11,18 +11,14 @@ const CartGroup = (CartGroups: CartGroupProp) => {
   
   
 
-  const [Del,setDel]=useState(false)
-  const toggleDel =()=> {
-    setDel(!Del)
-  }
-
+  
   if (!CartGroups.product) {
-    return (<div> </div>);
+    return (<div> aaaa</div>);
   }
   
   return (
-    <div className="cart-item" onClick={toggleDel}>
-      <div className="remove-btn" onClick={()=>CartGroups.removeCartItem(CartGroups.product,CartGroups.key)}>
+    <div className="cart-item" >
+      <div className="remove-btn" onClick={()=>CartGroups.removeProductCart(CartGroups.product,CartGroups.key)}>
      
       </div>
       <div className="details">

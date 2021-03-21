@@ -21,9 +21,11 @@ export class RemoveCartProductAction implements Action {
 export const AddProductToCart = (product: IProduct, quantity: number) => {
   const ProductToCart: CartProduct = {
     ...product,
-    itemIQuantity: quantity
+    itemIQuantity: quantity,
   };
+  
   return new AddProductAction(ProductToCart);
+  
 }
 
 export const RemoveProductToCart = (product: CartProduct, id: number) => (dispatch: Dispatch) => {

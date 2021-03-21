@@ -11,12 +11,15 @@ const middleware: Middleware[]=[
     thunk,
     simple,
 ];
+
+
+
 const composedEnhancers=compose(
     applyMiddleware(...middleware),
     
 )
 export default createStore(
     rootReducer,
-    composedEnhancers
+    composedEnhancers,
     )
 
