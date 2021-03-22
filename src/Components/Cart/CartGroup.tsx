@@ -1,39 +1,29 @@
 import React, { Component, useState } from "react";
 import IProduct from "../../Models/IProduct";
-
-import {CartGroupProp} from '../Cart/CartGroupContainer'
-
-
-
+import "./CartGroup.css";
+import { CartGroupProp } from "../Cart/CartGroupContainer";
 
 const CartGroup = (CartGroups: CartGroupProp) => {
-
-  
-  
-
-  
-  if (!CartGroups.product) {
-    return (<div> aaaa</div>);
-  }
-  
   return (
-    <div className="cart-item" >
-      <div className="remove-btn" onClick={()=>CartGroups.removeProductCart(CartGroups.product,CartGroups.key)}>
-     
+    <div className="cart-item">
+      <div
+        className="remove-btn"
+        onClick={() =>
+          CartGroups.removeProductCart(CartGroups.product, CartGroups.id)
+        }
+        title={CartGroups.product.Title}>
+
       </div>
-      <div className="details">
-        <p className="title">{CartGroups.product.Title}</p>
-        <div className="img">
-          <img src={CartGroups.product.Image}></img>
-        </div>
-        <div className="cart-name"> {CartGroups.product.Name}</div>
+      <div className="cart-img">
+        <img src={CartGroups.product.Image}></img>
       </div>
 
+      <div className="detail">
+        <p className="title">{CartGroups.product.Title}</p>
+        <p className="cart-itemquantity"> {CartGroups.product.itemIQuantity}</p>
+      </div>
     </div>
   );
-}
-
- 
-
+};
 
 export default CartGroup;

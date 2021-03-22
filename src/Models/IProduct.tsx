@@ -1,7 +1,6 @@
 export default interface IProduct {
     Size: string[];
-    Name: string;
-    Quantity: number;
+    Name: string
     id: number;
     Price: number;
     Title:string;

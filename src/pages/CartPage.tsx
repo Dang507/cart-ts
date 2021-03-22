@@ -3,54 +3,44 @@ import CartGroupContainer, {
   CartGroupProp,
 } from "../Components/Cart/CartGroupContainer";
 import { ProuductProp } from "./ProductContainer";
-
 import IProduct from "../Models/IProduct";
 import CartProduct from "../Models/IQuantity";
 import ProductCart, { CartProp } from "../pages/CartContainer";
-
-import CartGroup from "../Components/Cart/CartGroup";
-
 import "./CartPage.css";
 const CartPage = (CartProp: CartProp) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const productItemToCart = [];
-  for (const a in ProductCart) {
-    productItemToCart.push(CartProp.ProductCart[a]);
-
+  const ItemInCart = [];
+  for (const a in CartProp.ProductCart) {
+    ItemInCart.push(CartProp.ProductCart[a]);
   }
-  const item = productItemToCart.reduce((sum: number, items: CartProduct) => {
-    return sum
+  const item = ItemInCart.reduce((sum: number, items: CartProduct) => {
+    return sum + items.itemIQuantity;
   }, 0);
   const cart = isOpen ? "cart-page" : "cart-page cart-page--cart-close ";
-  const bag = isOpen ? "bags" : "bags bags--cart-close ";
+  const bags = isOpen ? "bags" : "bags bags--cart-close ";
+  const itemquantity = isOpen ? "item-quantity" : "item-quantity item-quantity-icon--cart-close";
 
   return (
-    <>
-      <div className={cart}>
-        <div className="cart-close-btn" onClick={handleToggle}>
-          x
-        </div>
+    <div className={cart}>
+           <div className="cart-close-button" onClick={handleToggle}>X
+           </div>
         <div className="cart-content">
-          <div className="cart-header" >
-            <div  className={bag} onClick={handleToggle}>
-            <span >{item}</span>
+          <div className="cart-header">
+            <div className={bags} onClick={handleToggle}>
+              <span className={itemquantity}>{item}</span>
             </div>
-            <span className="cart-title">Cart</span>
+            <span className="header-title">Cart</span>
           </div>
-
-          <div className="cart-group">
-            {productItemToCart.map((value, index) => {
-              <CartGroupContainer product={value} key={index} />;
-            })}
+          <div className="cart-item">
+            {ItemInCart.map((value, index) => <CartGroupContainer product={value} id={index}/>)}
           </div>
         </div>
-      </div>
-    </>
+    </div>
   );
 };
 

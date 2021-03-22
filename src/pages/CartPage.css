@@ -17,29 +17,22 @@
   right: -450px;
 }
 .cart-header {
- 
+ /* Opera */
   color: white;
   box-sizing: border-box;
   text-align: center;
   padding: 45px 0;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
- 
 }
-.cart-header .cart-title {
+.cart-header .header-title {
   font-weight: bold;
   font-size: 1.2em;
   vertical-align: middle;
 }
-.cart-content {
+.float-cart_content {
   height: 100%;
   overflow-y: scroll;
 }
-.cart-close-btn {
+.cart-close-button {
   width: 50px;
   height: 50px;
   color: #ececec;
@@ -50,10 +43,8 @@
   top: 0;
   left: 0;
   cursor: pointer;
-  
 }
-
-.cart-close-btn:hover {
+.cart-close-button:hover {
   background-color: #3e25cf;
 }
 .bags {
@@ -63,7 +54,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  background-image:url('../bag-icon.png');
+  background-image: url('../bag-icon.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -78,8 +69,7 @@
   height: 60px;
   cursor: pointer;
 }
-
-.item-quantity-icon {
+.item-quantity {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -98,7 +88,7 @@
   bottom: 5px;
   right: 10px;
 }
-.cart-group {
+.cart-item {
   position: relative;
   width: 100%;
   min-height: 280px;

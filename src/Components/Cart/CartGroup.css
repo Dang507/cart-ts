@@ -1,0 +1,54 @@
+.cart-item{
+  position: relative;
+  box-sizing: border-box;
+  padding: 5%;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.cart-item::before {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+
+  .remove-btn {
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 5%;
+    border-radius: 50%;
+    position: absolute;
+    background-size: auto 100%;
+    background-image: url('../../sprite_delete-icon.png');
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .cart-imgw{
+    vertical-align: top;
+    width: 15%;
+    margin-right: 3%;
+    display: inline-block;
+  }
+  .cart-imgw .img {
+    width: 100%;
+    height: auto;
+  }
+  .remove-btn:hover {
+    background-position-x: -17px;
+  }
+
+  .cart-imgw {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: left;
+  }
+  .cart-imgw .title {
+    color: #ececec;
+    margin: 0;
+  }

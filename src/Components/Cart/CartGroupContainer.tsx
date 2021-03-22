@@ -11,7 +11,7 @@ interface DispatchProp {
 }
 interface StateProp {
     product: CartProduct;
-    key: number;
+    id: number;
 }
 export type CartGroupProp = DispatchProp & StateProp
 

@@ -6,7 +6,7 @@ export interface CartState {
     products: Dictionary<CartProduct>
 }
 const intial: CartState = {
-    products: {}
+    products:{}
 }
 export function CartReducer(state: CartState = intial, action: CartAction): CartState {
     switch (action.type) {
