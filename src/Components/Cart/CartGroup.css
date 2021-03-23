@@ -1,13 +1,14 @@
-.cart-item{
+.item{
+  display: flex;
   position: relative;
   box-sizing: border-box;
   padding: 5%;
   transition: background-color 0.2s, opacity 0.2s;
 }
 
-.cart-item::before {
+.item::before {
     content: '';
-    width: 90%;
+    width: 100%;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -15,40 +16,43 @@
     left: 5%;
   }
 
-  .remove-btn {
-    width: 16px;
-    height: 16px;
-    top: 15px;
-    right: 5%;
+  .remove-icon {
+    width: 15px;
+    height: 15px;
+    top: 25px;
+    right: 30px;
     border-radius: 50%;
     position: absolute;
     background-size: auto 100%;
     background-image: url('../../sprite_delete-icon.png');
     background-repeat: no-repeat;
     z-index: 2;
-    cursor: pointer;
+    cursor:pointer;
   }
-  .cart-imgw{
+  .cart-img{
     vertical-align: top;
-    width: 15%;
-    margin-right: 3%;
+    width: 100%;
+    margin-right: 30px;
     display: inline-block;
   }
-  .cart-imgw .img {
+  .cart-img .img {
     width: 100%;
     height: auto;
   }
-  .remove-btn:hover {
-    background-position-x: -17px;
+  .remove-icon:hover {
+    background-position-x: -15px;
+   
   }
 
-  .cart-imgw {
+  .cart-img {
     display: inline-block;
     width: 50%;
     vertical-align: middle;
     text-align: left;
   }
-  .cart-imgw .title {
+  .cart-img .title {
     color: #ececec;
     margin: 0;
   }
+  
+ 

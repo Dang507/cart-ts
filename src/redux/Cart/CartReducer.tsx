@@ -11,7 +11,7 @@ const intial: CartState = {
 export function CartReducer(state: CartState = intial, action: CartAction): CartState {
     switch (action.type) {
         case CartTypes.ADD_PRODUCT: {
-            const product = (action as AddProductAction).product;
+            const product = (action as  AddProductAction).product;
             if (state.products[product.Image]) {
                 product.itemIQuantity += state.products[product.Image].itemIQuantity
             }
@@ -19,10 +19,11 @@ export function CartReducer(state: CartState = intial, action: CartAction): Cart
                 ...state,
                 products: {
                     ...state.products,
-                [product.Image]:product,
+                [product.Image]:product
+               
                 }
             }
-        }
+        }   
 
         case CartTypes.REMOVE_PRODUCT: {
             const id = (action as RemoveCartProductAction).id;
@@ -30,7 +31,7 @@ export function CartReducer(state: CartState = intial, action: CartAction): Cart
             delete products[id];
             return {
                 ...state,
-                products,
+                
             }
         }
 

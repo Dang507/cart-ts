@@ -5,11 +5,11 @@ import { CartGroupProp } from "../Cart/CartGroupContainer";
 
 const CartGroup = (CartGroups: CartGroupProp) => {
   return (
-    <div className="cart-item">
+    <div className="item">
       <div
-        className="remove-btn"
+        className="remove-icon"
         onClick={() =>
-          CartGroups.removeProductCart(CartGroups.product, CartGroups.id)
+          CartGroups.removeProductCart(CartGroups.product, CartGroups.product.id)
         }
         title={CartGroups.product.Title}>
 
@@ -19,8 +19,10 @@ const CartGroup = (CartGroups: CartGroupProp) => {
       </div>
 
       <div className="detail">
+      
         <p className="title">{CartGroups.product.Title}</p>
-        <p className="cart-itemquantity"> {CartGroups.product.itemIQuantity}</p>
+        <p className = "price">Price:{CartGroups.product.Price}</p>
+        <p className="cart-itemquantity">Quantity: {CartGroups.product.itemIQuantity}</p>
       </div>
     </div>
   );

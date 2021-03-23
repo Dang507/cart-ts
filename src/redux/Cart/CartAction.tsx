@@ -3,8 +3,8 @@ import { Action } from 'redux'
 import IProduct from '../../Models/IProduct';
 import CartProduct from '../../Models/IQuantity'
 export enum CartTypes {
-  ADD_PRODUCT = "[CART_PRODUCT] ADD",
-  REMOVE_PRODUCT = "[CART_PRODUCT] REMOVE"
+  ADD_PRODUCT = " ADD",
+  REMOVE_PRODUCT = " REMOVE"
 
 }
 
@@ -15,7 +15,7 @@ export class AddProductAction implements Action {
 
 export class RemoveCartProductAction implements Action {
   public readonly type: CartTypes = CartTypes.REMOVE_PRODUCT;
-  constructor(public product: CartProduct, public id: number) { }
+  constructor(public product: IProduct, public id: number) { }
 }
 
 export const AddProductToCart = (product: IProduct, quantity: number) => {
@@ -28,7 +28,7 @@ export const AddProductToCart = (product: IProduct, quantity: number) => {
   
 }
 
-export const RemoveProductToCart = (product: CartProduct, id: number) => (dispatch: Dispatch) => {
+export const RemoveProductToCart = (product: IProduct, id: number) => (dispatch: Dispatch) => {
   dispatch(new RemoveCartProductAction(product, id));
 
 

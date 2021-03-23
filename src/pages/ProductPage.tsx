@@ -12,7 +12,6 @@ const ProductPage = (ProductProp: ProuductProp) => {
         
         <>
             <div className="product-page">
-
                 <div className="container">
                     <header className="header">Demo</header>
                     {DataProduct.map((value: IProduct, index: number) => {
