@@ -1,42 +1,50 @@
 import Dictionary from "../../Models/IDictionary";
 import CartProduct from "../../Models/IQuantity";
-import { CartAction, CartTypes, AddProductAction, RemoveCartProductAction } from './CartAction'
+import { CartAction, CartType, AddProductAction, RemoveCartProductAction } from './CartAction'
 
 export interface CartState {
     products: Dictionary<CartProduct>
 }
 const intial: CartState = {
-    products:{}
+    products: {}
 }
-export function CartReducer(state: CartState = intial, action: CartAction): CartState {
+export function CartReducer(intials: CartState = intial, action: CartAction): CartState {
     switch (action.type) {
-        case CartTypes.ADD_PRODUCT: {
-            const product = (action as  AddProductAction).product;
-            if (state.products[product.Image]) {
-                product.itemIQuantity += state.products[product.Image].itemIQuantity
+        case CartType.ADD_PRODUCT: {
+
+            const product = (action as AddProductAction).product;
+
+            if (intials.products[product.id]) {
+                product.itemIQuantity += intials.products[product.id].itemIQuantity
             }
             return {
-                ...state,
+
                 products: {
-                    ...state.products,
-                [product.Image]:product
-               
+
+                    [product.id]: product,
+                    ...intials.products,
+
                 }
             }
-        }   
+        }
 
-        case CartTypes.REMOVE_PRODUCT: {
+        case CartType.REMOVE_PRODUCT: {
+
             const id = (action as RemoveCartProductAction).id;
-            const products = { ...state.products };
+            const products = { ...intials.products };
             delete products[id];
+
+
             return {
-                ...state,
-                
+
+                products: {
+                    ...products,
+                }
             }
         }
 
         default:
-            return state;
+            return intials;
 
     }
 

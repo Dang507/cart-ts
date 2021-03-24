@@ -23,7 +23,7 @@ const DataProduct: IProduct[] = [
     Name: "Áo 3",
     id: 14,
     Price: 110000,
-    Title: "áo thun 4",
+    Title: "áo thun 3",
     Image: "/images/h5.jpg",
   },
   {
@@ -31,7 +31,7 @@ const DataProduct: IProduct[] = [
     Name: "Áo 4",
     id: 51,
     Price: 103000,
-    Title: "áo thun 5",
+    Title: "áo thun 4",
     Image: "/images/h23.jpg",
   },
   {
@@ -39,7 +39,7 @@ const DataProduct: IProduct[] = [
     Name: "Áo 5",
     id: 21,
     Price: 114000,
-    Title: "áo thun 6",
+    Title: "áo thun 5",
     Image: "/images/h3.jpg",
   },
 
@@ -48,7 +48,7 @@ const DataProduct: IProduct[] = [
     Name: "Áo 6",
     id: 31,
     Price: 103200,
-    Title: "áo thun 7",
+    Title: "áo thun 6",
     Image: "/images/h2.jpg",
   },
   {
@@ -56,7 +56,7 @@ const DataProduct: IProduct[] = [
     Name: "Áo 7",
     id: 18,
     Price: 190000,
-    Title: "áo thun 8",
+    Title: "áo thun 7",
     Image: "/images/h21.jpg",
   },
 ];

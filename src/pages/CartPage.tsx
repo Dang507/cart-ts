@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CartGroupContainer, {
+import CartItemContainer, {
   CartGroupProp,
-} from "../Components/Cart/CartGroupContainer";
+} from "../Components/Cart/CartItemContainer";
 import { ProuductProp } from "./ProductContainer";
 import IProduct from "../Models/IProduct";
 import CartProduct from "../Models/IQuantity";
@@ -43,7 +43,7 @@ const CartPage = (CartProp: CartProp) => {
         </div>
         <div className="cart-item" >
           {ItemInCart.map((value, index) => (
-            <CartGroupContainer product={value} id={index} />
+            <CartItemContainer product={value} id={index} />
           ))}
         </div>
       </div>

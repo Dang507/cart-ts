@@ -1,6 +1,4 @@
 import IProduct from "./IProduct";
-
-
 export interface IQuantity {
     itemIQuantity: number;
     

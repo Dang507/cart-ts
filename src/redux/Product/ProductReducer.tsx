@@ -2,27 +2,27 @@ import React from 'react'
 import  Dictionary  from '../../Models/IDictionary';
 import IProduct from '../../Models/IProduct';
 import  CartProduct  from '../../Models/IQuantity';
-import { ProductAction,ProductActionType } from './ProductAction';
+import { ProductAction,ProductType } from './ProductAction';
 
 export interface ProductState {
   products: IProduct[];
 }
-const initialState: ProductState = {
+const initial: ProductState = {
   products: [],
 };
-export function productReducer (state:ProductState=initialState, action:ProductAction)
+export function productReducer (intials:ProductState=initial, action:ProductAction)
 {
   switch (action.type) {
 
-    case ProductActionType.PRODUCT_FETCHED:
+    case ProductType.PRODUCT_FETCHED:
 
       return {
-        ...state,
+        ...intials,
         products: action.products,
       };
 
     default:
-      return state;
+      return intials;
   }
 }
 

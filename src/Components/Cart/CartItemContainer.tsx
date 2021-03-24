@@ -3,7 +3,7 @@ import CartProduct from "../../Models/IQuantity";
 import CartPage from "../../pages/CartPage";
 import { RemoveProductToCart } from '../../redux/Cart/CartAction'
 import {connect} from 'react-redux'
-import CartGroup from "./CartGroup";
+import CartItem from "./CartItem";
 type RemoveProductToCartProp = (product: CartProduct, id: number) => void;
 
 interface DispatchProp {
@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch: any): DispatchProp => ({
     removeProductCart:(cartproduct: CartProduct, id: number)=> dispatch(RemoveProductToCart(cartproduct, id)),
 })
 
-export default connect (null,mapDispatchToProps)(CartGroup)
+export default connect (null,mapDispatchToProps)(CartItem)

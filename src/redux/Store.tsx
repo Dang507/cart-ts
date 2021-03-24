@@ -1,5 +1,5 @@
-import React from 'react'
-import {createStore,AnyAction,Dispatch,Middleware,compose,applyMiddleware} from 'redux'
+
+import {createStore,AnyAction,Dispatch,Middleware,applyMiddleware} from 'redux'
 import { rootReducer } from './rootReducer'
 import thunk from "redux-thunk"
 import { composeWithDevTools } from 'redux-devtools-extension';
@@ -12,11 +12,6 @@ const middleware: Middleware[]=[
     thunk,
     simple,
 ];
-
-// compose(
-//     applyMiddleware(...middleware),
-    
-
 
 const composedEnhancers=composeWithDevTools({
   
