@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from '../Components/Product/Product'
+import ProductItem from '../Components/Product/ProductItem'
 import { ProuductProp } from './ProductContainer'
 import IProduct from '../Models/IProduct'
 import DataProduct from '../data'
@@ -16,7 +16,7 @@ const ProductPage = (ProductProp: ProuductProp) => {
                     <header className="header">Demo</header>
                     {DataProduct.map((value: IProduct, index: number) => {
                         return (
-                            <Product
+                            <ProductItem
                                 product={value}
                                 key={index}
                                 addToCart={ProductProp.addToCart}

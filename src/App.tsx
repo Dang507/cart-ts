@@ -6,11 +6,12 @@ import './App.css';
 import Store from './redux/Store';
 import { Provider } from 'react-redux';
 import CartProduct from './Models/IQuantity';
-import Product from './Components/Product/Product';
+import Product from './Components/Product/ProductItem';
 import store from '../src/redux/Store'
 import {AddProductAction } from './redux/Cart/CartAction'
 import ProductContainer from './pages/ProductContainer';
 import CartContainer from './pages/CartContainer';
+
 function App() {
   
 

@@ -2,7 +2,7 @@ import { type } from "node:os";
 import React from "react";
 import IProduct from "../Models/IProduct";
 import { connect } from "react-redux";
-import Product from "../Components/Product/Product";
+import Product from "../Components/Product/ProductItem";
 import ProductPage from "./ProductPage";
 import { AddProductToCart } from "../redux/Cart/CartAction";
 import { AppState } from "../redux/rootReducer";

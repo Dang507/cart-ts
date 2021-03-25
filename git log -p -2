@@ -1,0 +1,125 @@
+[33mcommit e91776e8eb5d357d1d9e6b482f2be89439b3af22[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Wed Mar 24 15:26:45 2021 +0700
+
+    final
+
+[33mcommit d66880b6b87ebe72bb93a155974ec768cc4c255c[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Tue Mar 23 17:36:14 2021 +0700
+
+    cant remove
+
+[33mcommit ff62f152e071519c4010b00c715f7b6a1ad2c5f8[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Mon Mar 22 16:59:33 2021 +0700
+
+    cart dont load product list
+
+[33mcommit 318f4ff6f163fbbb44e7a048a0bd307f4bd64e1d[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Mon Mar 22 06:24:56 2021 +0700
+
+    not done
+
+[33mcommit 8bf85936c85b535adbc5cf1a78010817ff655cc1[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Fri Mar 19 17:18:05 2021 +0700
+
+    sss
+
+[33mcommit 906f2a659bec6a0f4ce2f483c562c6919fde6e95[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Fri Mar 19 06:06:50 2021 +0700
+
+    cant add to cart
+
+[33mcommit 44143d7a4dc462d5942ec25f80b93dca3d626acd[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Thu Mar 18 17:21:00 2021 +0700
+
+    cant load image
+
+[33mcommit 0ec7404d3e5148a9bfb34ed4400a64e6a80a0aab[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Thu Mar 18 07:13:37 2021 +0700
+
+    store not work
+
+[33mcommit c8a772a14d1463a6db80da396206c7790dde2209[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Wed Mar 17 17:33:04 2021 +0700
+
+    redcuer+store must done
+
+[33mcommit ad156b7ff42524584deef374921b7e998290e973[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Tue Mar 16 16:21:25 2021 +0700
+
+    must done in 19th
+
+[33mcommit 7a74f9f9bfb58ea62a30397f7f5a185bd8a9543a[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Tue Mar 16 07:21:09 2021 +0700
+
+    cart page, product page not dont
+
+[33mcommit 00ba19cd022d99b2051042ee7b8f5827e349388a[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Mon Mar 15 17:38:37 2021 +0700
+
+    recreate struc
+
+[33mcommit a65d64c075f6d825e1b059f3afada57bdc162784[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Mon Mar 15 06:50:52 2021 +0700
+
+    cart,product need be done
+
+[33mcommit 24295e19635551978bb9f380c12ef1938c4cf2e0[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Fri Mar 12 17:09:13 2021 +0700
+
+    add rootReducer
+
+[33mcommit 23060e8b8fb7c80d524243a3b03ec3ebab5177eb[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Thu Mar 11 17:44:57 2021 +0700
+
+    create redux,logic components
+
+[33mcommit a50a7f3ecfb54092ac3a044c5b8723f402c20591[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Wed Mar 10 17:21:25 2021 +0700
+
+    create interface in product,productconatiner components
+
+[33mcommit ffd1c2cfe2e96db992809a3c2d954140198311f0[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Tue Mar 9 17:30:03 2021 +0700
+
+    create data.json, add image to IProducts
+
+[33mcommit 2ee4adc9defba343bb31c75dad027cc8843e368b[m
+Author: dangvp2021 <dangvp2014@gmail.com>
+Date:   Tue Mar 9 11:24:31 2021 +0700
+
+    fromcp
+
+[33mcommit c4a0ba5bf4c07bd5cd799a5d540393797ce310bf[m[33m ([m[1;31morigin/fromcp[m[33m, [m[1;32mfromcp[m[33m)[m
+Author: bjproqn96 <dangvp2014@gmail.com>
+Date:   Mon Mar 8 23:44:06 2021 +0700
+
+    add interface
+
+[33mcommit fcf96997fd29822dd85eb8a64a6ac9348f62ad3a[m
+Author: Dang Vu <dang.vu@logigear.com>
+Date:   Mon Mar 8 16:19:43 2021 +0700
+
+    Sec Commit
+
+[33mcommit 0de94c26b4f70810da9c670a488b1b2fd3fa83ed[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Dang Vu <dang.vu@logigear.com>
+Date:   Mon Mar 8 14:49:28 2021 +0700
+
+    Initialize project using Create React App

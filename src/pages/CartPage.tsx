@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import CartItemContainer, {
-  CartGroupProp,
-} from "../Components/Cart/CartItemContainer";
-import { ProuductProp } from "./ProductContainer";
-import IProduct from "../Models/IProduct";
+import CartItemContainer from "../Components/Cart/CartItemContainer";
 import CartProduct from "../Models/IQuantity";
-import ProductCart, { CartProp } from "../pages/CartContainer";
+import { CartProp } from "../pages/CartContainer";
 import "./CartPage.css";
 
 

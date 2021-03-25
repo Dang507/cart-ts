@@ -13,7 +13,7 @@ interface StateProp {
     product: CartProduct;
     id: number;
 }
-export type CartGroupProp = DispatchProp & StateProp
+export type CartItemProp = DispatchProp & StateProp
 
 const mapDispatchToProps = (dispatch: any): DispatchProp => ({
     removeProductCart:(cartproduct: CartProduct, id: number)=> dispatch(RemoveProductToCart(cartproduct, id)),

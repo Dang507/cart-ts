@@ -1,9 +1,9 @@
 import React, { Component, useState } from "react";
 import IProduct from "../../Models/IProduct";
 import "./CartItem.css";
-import { CartGroupProp } from "./CartItemContainer";
+import { CartItemProp } from "./CartItemContainer";
 
-const CartItem = (CartGroups: CartGroupProp) => {
+const CartItem = (CartGroups: CartItemProp) => {
   return (
     <div className="item">
       <div
