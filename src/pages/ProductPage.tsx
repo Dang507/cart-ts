@@ -1,10 +1,10 @@
-import React from 'react'
+
 import ProductItem from '../Components/Product/ProductItem'
 import { ProuductProp } from './ProductContainer'
 import IProduct from '../Models/IProduct'
 import DataProduct from '../data'
  import './productpage.css'
-import src from '*.avif'
+
  
 const ProductPage = (ProductProp: ProuductProp) => {
 

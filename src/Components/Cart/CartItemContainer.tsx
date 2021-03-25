@@ -1,6 +1,6 @@
 import IProduct from "../../Models/IProduct";
 import CartProduct from "../../Models/IQuantity";
-import CartPage from "../../pages/CartPage";
+
 import { RemoveProductToCart } from '../../redux/Cart/CartAction'
 import {connect} from 'react-redux'
 import CartItem from "./CartItem";

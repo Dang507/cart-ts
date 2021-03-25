@@ -7,7 +7,7 @@ const DataProduct: IProduct[] = [
     id: 1,
     Price: 120000,
     Title: "áo thun 1",
-    Image: "/images/h23.jpg",
+    Image: "./images/h23.jpg",
   },
   {
     

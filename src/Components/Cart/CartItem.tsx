@@ -1,5 +1,4 @@
-import React, { Component, useState } from "react";
-import IProduct from "../../Models/IProduct";
+
 import "./CartItem.css";
 import { CartItemProp } from "./CartItemContainer";
 
@@ -23,6 +22,10 @@ const CartItem = (CartGroups: CartItemProp) => {
         <p className="title">{CartGroups.product.Title}</p>
         <p className = "price">Price:{CartGroups.product.Price}</p>
         <p className="cart-itemquantity">Quantity: {CartGroups.product.itemIQuantity}</p>
+      </div>
+      <div className="checkout">
+            <p>checkout</p>
+           
       </div>
     </div>
   );

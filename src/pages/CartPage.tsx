@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import CartItemContainer from "../Components/Cart/CartItemContainer";
 import CartProduct from "../Models/IQuantity";
 import { CartProp } from "../pages/CartContainer";
@@ -41,8 +41,12 @@ const CartPage = (CartProp: CartProp) => {
           {ItemInCart.map((value, index) => (
             <CartItemContainer product={value} id={index} />
           ))}
+          <div>
+            <p>tính tiền</p>
+          </div>
         </div>
       </div>
+      
     </div>
   );
 };
