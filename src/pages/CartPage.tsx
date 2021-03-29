@@ -41,9 +41,7 @@ const CartPage = (CartProp: CartProp) => {
           {ItemInCart.map((value, index) => (
             <CartItemContainer product={value} id={index} />
           ))}
-          <div>
-            <p>tính tiền</p>
-          </div>
+       
         </div>
       </div>
       

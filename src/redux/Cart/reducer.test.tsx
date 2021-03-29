@@ -1,5 +1,5 @@
 import { CartReducer } from './CartReducer'
-import { CartAction, AddProductAction } from './CartAction'
+import { CartAction } from './CartAction'
 
 describe(CartReducer.name, () => {
     it('initial value', () => {

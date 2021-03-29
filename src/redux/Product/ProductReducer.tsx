@@ -14,7 +14,7 @@ export function productReducer(intials: ProductState = initial, action: ProductA
     case ProductType.PRODUCT_FETCHED:
 
       return {
-        ...intials,
+     
         products: action.products,
       };
 
